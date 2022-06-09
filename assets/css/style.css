@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.navbar,
+.form {
+    background-color: #28A745;
+    padding-left: 2rem;
+    font-weight: 500;
+}
+
+.logo-navbar {
+    height: 3rem;
+}
+
+.price-sale {
+    color: #28A745;
+    font-weight: 500;
+}
+
+.img-footer {
+    width: 80px;
+
+}
+
+/* Animaciones para Cards */
+
+.card .cover {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    bottom: 125px;
+    z-index: 1;
+    transition: all 600ms;
+    opacity: 0.12;
+    filter: blur(10px) brightness(0.8) saturate(70%);
+
+}
+
+.card:hover .cover img {
+    bottom: 0px;
+    filter: none;
+    opacity: 100%;
+}
